@@ -1,0 +1,39 @@
+---
+
+- name: Create user and configure ssh
+  hosts: remote-server
+  become: true
+
+  tasks:
+    - name: create new user
+      user:
+        name: new_user
+        shell: /bin/bash
+        create_home: yes
+
+    - name: set authorized key to a new user
+      authorized_key:
+        user: new_user
+        state: present
+        key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+
+    - name: disable password
+      lineinfile:
+        dest: /etc/ssh/sshd_config
+        regexp: '^PasswordAuthentication'
+        line: 'PasswordAuthentication no'
+      notify: restart sshd
+
+    - name: create directory in /opt
+      file:
+        path: /opt/user_directory
+        state: directory
+        owner: new_user
+        group: new_user
+        mode: 0755
+
+  handlers:
+    - name: restart sshd
+      service:
+        name: sshd
+        state: restarted
