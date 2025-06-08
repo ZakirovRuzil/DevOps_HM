@@ -30,7 +30,7 @@
         state: directory
         owner: new_user
         group: new_user
-        mode: 0755
+        mode: 660
 
   handlers:
     - name: restart sshd
