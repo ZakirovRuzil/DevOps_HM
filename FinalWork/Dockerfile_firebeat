@@ -1,0 +1,9 @@
+FROM elastic/filebeat:8.13.4
+
+COPY filebeat.yml /usr/share/filebeat/filebeat.yml
+
+USER root
+# Изменяем разрешения на файл конфигурации
+RUN chmod go-w /usr/share/filebeat/filebeat.yml
+
+USER filebeat

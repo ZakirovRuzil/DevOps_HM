@@ -1,0 +1,12 @@
+FROM php:8.0-fpm
+
+WORKDIR /var/www/html
+
+COPY ./app /var/www/html
+
+# Устанавливаем права на запись для папки с заметками
+RUN mkdir -p /var/www/html/notes && \
+    chown -R www-data:www-data /var/www/html/notes && \
+    chmod -R 775 /var/www/html/notes
+
+EXPOSE 9000
