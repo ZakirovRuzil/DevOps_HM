@@ -1,37 +1,107 @@
-2025-06-23 12:55:30 creating user directories
-2025-06-23 12:55:30 create directory directory//root_workdir and add 660 root (root:root)
-2025-06-23 12:55:30 create directory directory//daemon_workdir and add 660 root (daemon:daemon)
-2025-06-23 12:55:30 create directory directory//bin_workdir and add 660 root (bin:bin)
-2025-06-23 12:55:30 create directory directory//sys_workdir and add 660 root (sys:sys)
-2025-06-23 12:55:30 create directory directory//sync_workdir and add 660 root (sync:nogroup)
-2025-06-23 12:55:30 create directory directory//games_workdir and add 660 root (games:games)
-2025-06-23 12:55:30 create directory directory//man_workdir and add 660 root (man:man)
-2025-06-23 12:55:30 create directory directory//lp_workdir and add 660 root (lp:lp)
-2025-06-23 12:55:30 create directory directory//mail_workdir and add 660 root (mail:mail)
-2025-06-23 12:55:30 create directory directory//news_workdir and add 660 root (news:news)
-2025-06-23 12:55:30 create directory directory//uucp_workdir and add 660 root (uucp:uucp)
-2025-06-23 12:55:30 create directory directory//proxy_workdir and add 660 root (proxy:proxy)
-2025-06-23 12:55:30 create directory directory//www-data_workdir and add 660 root (www-data:www-data)
-2025-06-23 12:55:31 create directory directory//backup_workdir and add 660 root (backup:backup)
-2025-06-23 12:55:31 create directory directory//list_workdir and add 660 root (list:list)
-2025-06-23 12:55:31 create directory directory//irc_workdir and add 660 root (irc:irc)
-2025-06-23 12:55:31 create directory directory//_apt_workdir and add 660 root (_apt:nogroup)
-2025-06-23 12:55:31 create directory directory//systemd-network_workdir and add 660 root (systemd-network:systemd-network)
-2025-06-23 12:55:31 create directory directory//tss_workdir and add 660 root (tss:tss)
-2025-06-23 12:55:31 create directory directory//systemd-timesync_workdir and add 660 root (systemd-timesync:systemd-timesync)
-2025-06-23 12:55:31 create directory directory//messagebus_workdir and add 660 root (messagebus:messagebus)
-2025-06-23 12:55:31 create directory directory//avahi-autoipd_workdir and add 660 root (avahi-autoipd:avahi-autoipd)
-2025-06-23 12:55:31 create directory directory//usbmux_workdir and add 660 root (usbmux:plugdev)
-2025-06-23 12:55:31 create directory directory//dnsmasq_workdir and add 660 root (dnsmasq:nogroup)
-2025-06-23 12:55:31 create directory directory//avahi_workdir and add 660 root (avahi:avahi)
-2025-06-23 12:55:31 create directory directory//speech-dispatcher_workdir and add 660 root (speech-dispatcher:audio)
-2025-06-23 12:55:31 create directory directory//fwupd-refresh_workdir and add 660 root (fwupd-refresh:fwupd-refresh)
-2025-06-23 12:55:31 create directory directory//saned_workdir and add 660 root (saned:saned)
-2025-06-23 12:55:31 create directory directory//geoclue_workdir and add 660 root (geoclue:geoclue)
-2025-06-23 12:55:31 create directory directory//polkitd_workdir and add 660 root (polkitd:polkitd)
-2025-06-23 12:55:31 create directory directory//rtkit_workdir and add 660 root (rtkit:rtkit)
-2025-06-23 12:55:31 create directory directory//colord_workdir and add 660 root (colord:colord)
-2025-06-23 12:55:31 create directory directory//gnome-initial-setup_workdir and add 660 root (gnome-initial-setup:nogroup)
-2025-06-23 12:55:32 create directory directory//Debian-gdm_workdir and add 660 root (Debian-gdm:Debian-gdm)
-2025-06-23 12:55:32 create directory directory//ruzzil47_workdir and add 660 root (ruzzil47:ruzzil47)
-2025-06-23 12:55:32 creating directories completed
+2025-06-24 10:36:30 creating user directories
+2025-06-24 10:36:30 added root to dev group
+2025-06-24 10:36:30 create directory directory//root_workdir and add 660 root (root:root)
+2025-06-24 10:36:30 set read permission for dev group on directory//root_workdir
+2025-06-24 10:36:30 added daemon to dev group
+2025-06-24 10:36:30 create directory directory//daemon_workdir and add 660 root (daemon:daemon)
+2025-06-24 10:36:30 set read permission for dev group on directory//daemon_workdir
+2025-06-24 10:36:30 added bin to dev group
+2025-06-24 10:36:30 create directory directory//bin_workdir and add 660 root (bin:bin)
+2025-06-24 10:36:30 set read permission for dev group on directory//bin_workdir
+2025-06-24 10:36:30 added sys to dev group
+2025-06-24 10:36:30 create directory directory//sys_workdir and add 660 root (sys:sys)
+2025-06-24 10:36:30 set read permission for dev group on directory//sys_workdir
+2025-06-24 10:36:30 added sync to dev group
+2025-06-24 10:36:30 create directory directory//sync_workdir and add 660 root (sync:nogroup)
+2025-06-24 10:36:30 set read permission for dev group on directory//sync_workdir
+2025-06-24 10:36:30 added games to dev group
+2025-06-24 10:36:30 create directory directory//games_workdir and add 660 root (games:games)
+2025-06-24 10:36:30 set read permission for dev group on directory//games_workdir
+2025-06-24 10:36:30 added man to dev group
+2025-06-24 10:36:30 create directory directory//man_workdir and add 660 root (man:man)
+2025-06-24 10:36:30 set read permission for dev group on directory//man_workdir
+2025-06-24 10:36:30 added lp to dev group
+2025-06-24 10:36:30 create directory directory//lp_workdir and add 660 root (lp:lp)
+2025-06-24 10:36:30 set read permission for dev group on directory//lp_workdir
+2025-06-24 10:36:30 added mail to dev group
+2025-06-24 10:36:30 create directory directory//mail_workdir and add 660 root (mail:mail)
+2025-06-24 10:36:30 set read permission for dev group on directory//mail_workdir
+2025-06-24 10:36:30 added news to dev group
+2025-06-24 10:36:30 create directory directory//news_workdir and add 660 root (news:news)
+2025-06-24 10:36:30 set read permission for dev group on directory//news_workdir
+2025-06-24 10:36:30 added uucp to dev group
+2025-06-24 10:36:30 create directory directory//uucp_workdir and add 660 root (uucp:uucp)
+2025-06-24 10:36:30 set read permission for dev group on directory//uucp_workdir
+2025-06-24 10:36:30 added proxy to dev group
+2025-06-24 10:36:30 create directory directory//proxy_workdir and add 660 root (proxy:proxy)
+2025-06-24 10:36:30 set read permission for dev group on directory//proxy_workdir
+2025-06-24 10:36:30 added www-data to dev group
+2025-06-24 10:36:30 create directory directory//www-data_workdir and add 660 root (www-data:www-data)
+2025-06-24 10:36:30 set read permission for dev group on directory//www-data_workdir
+2025-06-24 10:36:31 added backup to dev group
+2025-06-24 10:36:31 create directory directory//backup_workdir and add 660 root (backup:backup)
+2025-06-24 10:36:31 set read permission for dev group on directory//backup_workdir
+2025-06-24 10:36:31 added list to dev group
+2025-06-24 10:36:31 create directory directory//list_workdir and add 660 root (list:list)
+2025-06-24 10:36:31 set read permission for dev group on directory//list_workdir
+2025-06-24 10:36:31 added irc to dev group
+2025-06-24 10:36:31 create directory directory//irc_workdir and add 660 root (irc:irc)
+2025-06-24 10:36:31 set read permission for dev group on directory//irc_workdir
+2025-06-24 10:36:31 added _apt to dev group
+2025-06-24 10:36:31 create directory directory//_apt_workdir and add 660 root (_apt:nogroup)
+2025-06-24 10:36:31 set read permission for dev group on directory//_apt_workdir
+2025-06-24 10:36:31 added systemd-network to dev group
+2025-06-24 10:36:31 create directory directory//systemd-network_workdir and add 660 root (systemd-network:systemd-network)
+2025-06-24 10:36:31 set read permission for dev group on directory//systemd-network_workdir
+2025-06-24 10:36:31 added tss to dev group
+2025-06-24 10:36:31 create directory directory//tss_workdir and add 660 root (tss:tss)
+2025-06-24 10:36:31 set read permission for dev group on directory//tss_workdir
+2025-06-24 10:36:31 added systemd-timesync to dev group
+2025-06-24 10:36:31 create directory directory//systemd-timesync_workdir and add 660 root (systemd-timesync:systemd-timesync)
+2025-06-24 10:36:31 set read permission for dev group on directory//systemd-timesync_workdir
+2025-06-24 10:36:31 added messagebus to dev group
+2025-06-24 10:36:31 create directory directory//messagebus_workdir and add 660 root (messagebus:messagebus)
+2025-06-24 10:36:31 set read permission for dev group on directory//messagebus_workdir
+2025-06-24 10:36:31 added avahi-autoipd to dev group
+2025-06-24 10:36:31 create directory directory//avahi-autoipd_workdir and add 660 root (avahi-autoipd:avahi-autoipd)
+2025-06-24 10:36:31 set read permission for dev group on directory//avahi-autoipd_workdir
+2025-06-24 10:36:31 added usbmux to dev group
+2025-06-24 10:36:31 create directory directory//usbmux_workdir and add 660 root (usbmux:plugdev)
+2025-06-24 10:36:31 set read permission for dev group on directory//usbmux_workdir
+2025-06-24 10:36:31 added dnsmasq to dev group
+2025-06-24 10:36:31 create directory directory//dnsmasq_workdir and add 660 root (dnsmasq:nogroup)
+2025-06-24 10:36:31 set read permission for dev group on directory//dnsmasq_workdir
+2025-06-24 10:36:31 added avahi to dev group
+2025-06-24 10:36:31 create directory directory//avahi_workdir and add 660 root (avahi:avahi)
+2025-06-24 10:36:31 set read permission for dev group on directory//avahi_workdir
+2025-06-24 10:36:31 added speech-dispatcher to dev group
+2025-06-24 10:36:31 create directory directory//speech-dispatcher_workdir and add 660 root (speech-dispatcher:audio)
+2025-06-24 10:36:31 set read permission for dev group on directory//speech-dispatcher_workdir
+2025-06-24 10:36:31 added fwupd-refresh to dev group
+2025-06-24 10:36:31 create directory directory//fwupd-refresh_workdir and add 660 root (fwupd-refresh:fwupd-refresh)
+2025-06-24 10:36:31 set read permission for dev group on directory//fwupd-refresh_workdir
+2025-06-24 10:36:31 added saned to dev group
+2025-06-24 10:36:31 create directory directory//saned_workdir and add 660 root (saned:saned)
+2025-06-24 10:36:31 set read permission for dev group on directory//saned_workdir
+2025-06-24 10:36:31 added geoclue to dev group
+2025-06-24 10:36:31 create directory directory//geoclue_workdir and add 660 root (geoclue:geoclue)
+2025-06-24 10:36:31 set read permission for dev group on directory//geoclue_workdir
+2025-06-24 10:36:31 added polkitd to dev group
+2025-06-24 10:36:31 create directory directory//polkitd_workdir and add 660 root (polkitd:polkitd)
+2025-06-24 10:36:31 set read permission for dev group on directory//polkitd_workdir
+2025-06-24 10:36:31 added rtkit to dev group
+2025-06-24 10:36:31 create directory directory//rtkit_workdir and add 660 root (rtkit:rtkit)
+2025-06-24 10:36:31 set read permission for dev group on directory//rtkit_workdir
+2025-06-24 10:36:31 added colord to dev group
+2025-06-24 10:36:31 create directory directory//colord_workdir and add 660 root (colord:colord)
+2025-06-24 10:36:31 set read permission for dev group on directory//colord_workdir
+2025-06-24 10:36:31 added gnome-initial-setup to dev group
+2025-06-24 10:36:31 create directory directory//gnome-initial-setup_workdir and add 660 root (gnome-initial-setup:nogroup)
+2025-06-24 10:36:31 set read permission for dev group on directory//gnome-initial-setup_workdir
+2025-06-24 10:36:32 added Debian-gdm to dev group
+2025-06-24 10:36:32 create directory directory//Debian-gdm_workdir and add 660 root (Debian-gdm:Debian-gdm)
+2025-06-24 10:36:32 set read permission for dev group on directory//Debian-gdm_workdir
+2025-06-24 10:36:32 added ruzzil47 to dev group
+2025-06-24 10:36:32 create directory directory//ruzzil47_workdir and add 660 root (ruzzil47:ruzzil47)
+2025-06-24 10:36:32 set read permission for dev group on directory//ruzzil47_workdir
+2025-06-24 10:36:32 creating directories completed
